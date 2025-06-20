@@ -1,5 +1,4 @@
-﻿using System.Reflection;
-using generator;
+﻿using generator;
 
 namespace sourcegen {
     class Program 
@@ -15,12 +14,5 @@ namespace sourcegen {
 
             Console.WriteLine(p.ToString());
         }
-    }
-
-    [GenerateToString]
-    public partial class Person{
-        public string? Name { get; set; }
-        public int? Age { get; set; }
-        public string? Email { get; set; }
     }
 }
