@@ -1,18 +1,24 @@
-﻿using generator;
+﻿using shared;
 
-namespace sourcegen {
-    class Program 
+namespace sourcegen
+{
+    class Program
     {
-        static void Main(string[] args){
+        static void Main(string[] args)
+        {
             Console.WriteLine("Hello, World!");
 
-            var p = new Person {
+            var p = new Person
+            {
                 Name = "John",
                 Age = 30,
                 Email = "john@example.com"
             };
+            var text = p.ToString();
+            Console.WriteLine(text);
+            Console.WriteLine("Press any key to exit...");
 
-            Console.WriteLine(p.ToString());
+            Console.ReadKey();
         }
     }
 }
