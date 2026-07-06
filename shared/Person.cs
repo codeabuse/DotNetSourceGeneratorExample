@@ -1,6 +1,6 @@
 ﻿namespace shared;
 
-[GenerateToString("{0} ({1}) e-mail: {2}")]
+[GenerateToString("{0} ({1}) e-mail: {2}", "Name", "Age", "Email")]
 public partial class Person
 {
     public string? Name { get; set; }
